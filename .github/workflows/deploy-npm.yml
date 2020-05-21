@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: 12.x
           registry-url: "https://registry.npmjs.org"
-      - name: npm install, test, build
+      - name: npm install, build
         run: |
           npm install
           npm run build
