@@ -1,6 +1,6 @@
 {
   "name": "@dineug/vscode-google-analytics",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Simple vscode extension google analytics",
   "main": "dist/ga.cjs.js",
   "files": [
@@ -32,9 +32,8 @@
     "prettier": "^2.0.5",
     "rollup": "^2.10.5",
     "rollup-plugin-eslint": "^7.0.0",
-    "typescript": "^3.9.3"
-  },
-  "dependencies": {
+    "typescript": "^3.9.3",
     "got": "^11.1.4"
-  }
+  },
+  "dependencies": {}
 }
