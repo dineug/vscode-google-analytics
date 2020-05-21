@@ -26,6 +26,7 @@ analytics
     action: "test ea",
     label: "test el",
     value: 50,
+    clientID: "clientID",
   })
   .then((data) => {
     console.dir(data);
@@ -38,3 +39,4 @@ analytics
 | action   | String | Required |
 | label    | String | Optional |
 | value    | Number | Optional |
+| clientID | String | Optional |

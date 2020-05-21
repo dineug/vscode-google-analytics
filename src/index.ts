@@ -25,13 +25,13 @@ export interface EventData {
   action: string;
   label?: string;
   value?: number;
+  clientID?: string;
 }
 
 export class Analytics {
   private protocolVersion: string;
   private trackingID: string;
   private hitType = "event";
-  private clientID: string | null = "";
   constructor(trackingID: string, protocolVersion = "1") {
     this.trackingID = trackingID;
     this.protocolVersion = protocolVersion;
@@ -40,7 +40,7 @@ export class Analytics {
     const form: any = {
       v: this.protocolVersion,
       tid: this.trackingID,
-      cid: this.clientID ? this.clientID : uuid(),
+      cid: data.clientID ? data.clientID : uuid(),
       t: this.hitType,
       ec: data.category,
       ea: data.action,
