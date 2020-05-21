@@ -1,6 +1,6 @@
 {
   "name": "@dineug/vscode-google-analytics",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simple vscode extension google analytics",
   "main": "dist/ga.cjs.js",
   "files": [
